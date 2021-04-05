@@ -44,8 +44,8 @@ for (let i = 0; i < dataTimeElements.length; i += 1) {
   var currentHour = today.hour();
 
   //if timeblock is less than currenthour
-  if (dataTime < currentHour) {
-   timeBlock.addClass('present')
+  if (dataTime > currentHour) {
+   timeBlock.addClass('future')
     // change the class name here!
     console.log(timeBlock);
   };
