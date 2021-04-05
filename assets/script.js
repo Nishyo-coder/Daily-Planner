@@ -43,10 +43,11 @@ for (let i = 0; i < dataTimeElements.length; i += 1) {
   var dataTime = dataTimeElements[i].getAttribute("data-time");
   var currentHour = today.hour();
 
-  //if timeblock is less tan currenthour
+  //if timeblock is less than currenthour
   if (dataTime < currentHour) {
+   timeBlock.addClass('present')
     // change the class name here!
-    console.log(element);
+    console.log(timeBlock);
   };
 
 };
