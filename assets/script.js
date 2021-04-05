@@ -43,6 +43,7 @@ function handleFormSubmit(event) {
   //if the timeblock is less than the current time then the timeblock when clicked is grey
 
   //if the timeblock is greater than the current time then timeblock when clicked is green
+  
 
   timeBlock.addeventlistener("click", function() {
     if (hour > 8 && hour < 23) {
