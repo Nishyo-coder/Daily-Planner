@@ -37,6 +37,21 @@ function handleFormSubmit(event) {
   plannerformel.on('submit', handleFormSubmit);
   var saveButton = localStorage.getItem('input');
 
+  var dataTimeElements = document.querySelectorAll("div[data-time]") 
+
+for (let i = 0; i < dataTimeElements.length; i += 1) {
+  var dataTime = dataTimeElements[i].getAttribute("data-time");
+  var currentHour = today.hour();
+
+  //if timeblock is less tan currenthour
+  if (dataTime < currentHour) {
+    // change the class name here!
+    console.log(element);
+  };
+
+};
+
+
 
   //if the timeblock is equal to the current time then the timeblock when clicked is red
 
@@ -44,12 +59,5 @@ function handleFormSubmit(event) {
 
   //if the timeblock is greater than the current time then timeblock when clicked is green
   
-
-  timeBlock.addeventlistener("click", function() {
-    if (hour > 8 && hour < 23) {
-      $('time-block').addClass('present');
-      timeBlock.setAttribute("present");
     
-    }
-  });
 
