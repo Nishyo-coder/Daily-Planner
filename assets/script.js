@@ -46,11 +46,13 @@ for (let i = 0; i < dataTimeElements.length; i += 1) {
   //if timeblock is less than currenthour
   if (dataTime > currentHour) {
    timeBlock.addClass('future')
-    // change the class name here!
-    console.log(timeBlock);
-  };
+  }
+  else { (dataTime < currentHour) 
+    timeBlock.addClass('past')
+  }
+}
+  ;
 
-};
 
 
 
